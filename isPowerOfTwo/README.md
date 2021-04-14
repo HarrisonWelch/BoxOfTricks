@@ -8,8 +8,8 @@ x & (x-1) == 0
 ```
 
 ## Explanation
-* Bitwise AND `&` serve to convert the integer into binary and compare each digit one-by-one.
-  * If the 1 lines up with another 1, it will produce a 1. Otherwise return 0.
+* Bitwise AND `&` serve to convert the integer into binary and compare each digit one-by-one from first to last.
+  * If the 1 lines up with another 1, it will produce a 1. Otherwise produce 0.
   * 1 & 1 = 1
   * 1 & 0 = 0
   * 0 & 1 = 0
@@ -25,7 +25,8 @@ x & (x-1) == 0
 -----------
   0 1 0 0
 ```
-* The result is 100 so the number 6 is **NOT** a power of two
+* The result is 100 (or 4 in decimal number) so the number 6 is **NOT** a power of two
+* Note that all binary numbers can be zero-padded at the front
 
 ##### Example 2
 * In this example, n = 8
