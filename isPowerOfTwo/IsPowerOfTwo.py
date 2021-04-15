@@ -19,12 +19,12 @@ def isPowerOfTwoV2(x):
 def testFunction(f):
     print('Testing ' + str(f.__name__))
     print('-'*len('Testing ' + str(f.__name__)))
-    print(str(help(isPowerOfTwo)).replace('None','').strip('\n'))
+    print(str(help(f)).replace('None','').strip('\n'))
     print('')
     print('vvv 0 to 16: vvv')
     print('-'*len('vvv 0 to 16: vvv'))
     for i in range(16+1):
-        print('isPowerOfTwo('+str(i)+') = ' + str(f(i)))
+        print(str(f.__name__) + '('+str(i)+') = ' + str(f(i)))
     print('')
 
     print('vvv 0 to -16: vvv')
